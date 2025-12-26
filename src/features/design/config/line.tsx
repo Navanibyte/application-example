@@ -1,5 +1,5 @@
 import type { LayerId } from '@lidojs/design-core';
-import type { DeepPartial, LineLayerProps } from '@lidojs/design-editor';
+import type { DeepPartial, LineLayerProps } from 'src/local-lido/design-editor';
 import type { ReactElement } from 'react';
 import { v4 } from 'uuid';
 

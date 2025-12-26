@@ -6,7 +6,7 @@ import {
   type SerializedLayers,
   useEventCallback,
 } from '@lidojs/design-core';
-import { useEditor } from '@lidojs/design-editor';
+import { useEditor } from 'src/local-lido/design-editor';
 import axios from 'axios';
 import type React from 'react';
 import { type FC, type FormEvent, useEffect, useRef, useState } from 'react';

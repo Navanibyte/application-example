@@ -1,4 +1,4 @@
-import { DesignFrame } from '@lidojs/design-editor';
+import { DesignFrame } from 'src/local-lido/design-editor';
 import { data } from '../../../../constant/data';
 
 export const EditorContent = () => {

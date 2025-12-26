@@ -29,7 +29,7 @@ export const DesignPage = () => {
           files: Record<FontVariant, string>;
         }[];
       }>(
-        `https://www.googleapis.com/webfonts/v1/webfonts?key=${process.env.FONT_API_KEY}`,
+        `https://www.googleapis.com/webfonts/v1/webfonts?key=${import.meta.env.FONT_API_KEY}`,
       );
       const items = data.data.items;
       const res: FontData[] = items.map((i) => {

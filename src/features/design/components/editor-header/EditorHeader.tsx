@@ -2,7 +2,7 @@ import ArrowClockwiseIcon from '@duyank/icons/regular/ArrowClockwise';
 import ArrowCounterClockwiseIcon from '@duyank/icons/regular/ArrowCounterClockwise';
 import GithubLogoIcon from '@duyank/icons/regular/GithubLogo';
 import PlayCircleIcon from '@duyank/icons/regular/PlayCircle';
-import { useEditor } from '@lidojs/design-editor';
+import { useEditor } from 'src/local-lido/design-editor';
 import {
   type ChangeEvent,
   type ForwardRefRenderFunction,

@@ -1,5 +1,5 @@
 import XBoldIcon from '@duyank/icons/bold/XBold';
-import { useEditor } from '@lidojs/design-editor';
+import { useEditor } from 'src/local-lido/design-editor';
 import { useDraw } from '@lidojs/draw';
 import { type FC, useEffect, useRef, useState } from 'react';
 import { createPortal } from 'react-dom';

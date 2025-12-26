@@ -1,10 +1,10 @@
 import {
   LayerSettings as EditorLayerSettings,
   useSelectedLayers,
-} from '@lidojs/design-editor';
+} from 'src/local-lido/design-editor';
 
 export const LayerSettings = () => {
-  const { selectedLayerIds } = useSelectedLayers();
+  const { selectedLayerIds }:any = useSelectedLayers();
   return (
     <div
       css={{

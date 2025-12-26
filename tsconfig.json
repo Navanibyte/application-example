@@ -1,42 +1,41 @@
+// {
+//   "compilerOptions": {
+//     "target": "ESNext",
+//     "lib": ["DOM", "DOM.Iterable", "ESNext"],
+//     "jsx": "react-jsx",
+//     "module": "ESNext",
+//     "moduleResolution": "Bundler",
+    
+
+//     "baseUrl": ".",
+//     "paths": {
+//   "@lidojs/design-editor": ["src/local-lido/design-editor/index.ts"]
+// },
+
+//     "skipLibCheck": true,
+//     "noEmit": true,
+//     "types": ["vite/client"],
+//     "jsxImportSource": "@emotion/react"
+//   },
+//   "include": ["src", "vite.config.ts", "src/local-lido"]
+// }
+
 {
   "compilerOptions": {
-    "jsx": "preserve",
-    "allowJs": false,
-    "strict": true,
+    "baseUrl": ".",
+    "paths": {
+      "src/*": ["src/*"],
+      "src/local-lido/design-editor": [
+        "src/local-lido/design-editor/index.tsx"
+      ]
+    },
+    "jsx": "react-jsx",
     "jsxImportSource": "@emotion/react",
-    "types": ["vite/client"]
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "types": ["vite/client"],
+    "skipLibCheck": true
   },
-  "files": [],
-  "include": [],
-  "exclude": ["dist", "node_modules"],
-  "references": [
-    {
-      "path": "../../libs/draw"
-    },
-    {
-      "path": "../../libs/design-editor"
-    },
-    {
-      "path": "../../libs/design-utils"
-    },
-    {
-      "path": "../../libs/text-editor"
-    },
-    {
-      "path": "../../libs/design-screen"
-    },
-    {
-      "path": "../../libs/design-layers"
-    },
-    {
-      "path": "../../libs/design-core"
-    },
-    {
-      "path": "../../libs/color-picker"
-    },
-    {
-      "path": "./tsconfig.app.json"
-    }
-  ],
-  "extends": "../../tsconfig.base.json"
+  "include": ["src"]
 }
+

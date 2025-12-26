@@ -1,7 +1,7 @@
 import MagnifyingGlassIcon from '@duyank/icons/regular/MagnifyingGlass';
 import XIcon from '@duyank/icons/regular/X';
 import { useEventCallback } from '@lidojs/design-core';
-import { useEditor } from '@lidojs/design-editor';
+import { useEditor } from 'src/local-lido/design-editor';
 import axios from 'axios';
 import { type FC, type FormEvent, useEffect, useRef, useState } from 'react';
 import { isMobile } from 'react-device-detect';

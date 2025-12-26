@@ -5,7 +5,7 @@ import type {
   SerializedLayerTree,
   SerializedLayers,
 } from '@lidojs/design-core';
-import { useEditor } from '@lidojs/design-editor';
+import { useEditor } from 'src/local-lido/design-editor';
 import type { FC } from 'react';
 import { isMobile } from 'react-device-detect';
 import { iframeList } from '../../config/iframe';

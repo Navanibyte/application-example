@@ -1,6 +1,6 @@
 import XIcon from '@duyank/icons/regular/X';
 import type { LayerId, SerializedLayers } from '@lidojs/design-core';
-import { useEditor } from '@lidojs/design-editor';
+import { useEditor } from 'src/local-lido/design-editor';
 import axios from 'axios';
 import { type FC, useState } from 'react';
 import { isMobile } from 'react-device-detect';

@@ -1,7 +1,7 @@
 'use client';
 
 import type { FontData } from '@lidojs/design-core';
-import { Editor, type GetFontQuery, PageControl } from '@lidojs/design-editor';
+import { Editor, type GetFontQuery, PageControl } from 'src/local-lido/design-editor';
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { EditorContent } from './editor-content';
 import { EditorHeader } from './editor-header';
@@ -18,11 +18,11 @@ export const LidoJSEditor = ({
   const getFonts = useCallback(
     async (query: GetFontQuery) => {
       return googleFontList
-        .filter((i) => !query.q || i.name.toLowerCase().includes(query.q))
+        .filter((i: any) => !query.q || i.name.toLowerCase().includes(query.q))
         .slice(
-          Number.parseInt(query?.offset ?? '', 10),
-          Number.parseInt(query?.offset ?? '', 10) +
-            Number.parseInt(query?.limit || '', 10),
+          Number(query?.offset),
+          Number(query?.offset) +
+            Number(query?.limit),
         );
     },
     [googleFontList],
@@ -53,20 +53,17 @@ export const LidoJSEditor = ({
     [],
   );
 
-  const uploadImage = async (file: File) => {
-    // TODO: to integrate with image manipulation then need update this
-    return new Promise<{ url: string; thumb: string }>((resolve, reject) => {
-      const reader = new FileReader();
-      reader.readAsDataURL(file);
-      reader.onload = () => {
-        resolve({
-          url: reader.result as string,
-          thumb: reader.result as string,
-        });
-      };
-      reader.onerror = reject;
-    });
+const uploadImage = async (file: File) => {
+  const reader = new FileReader();
+  reader.readAsDataURL(file);
+
+  return {
+    url: reader.result as string,
+    thumb: reader.result as string,
   };
+};
+
+
 
   return (
     <Editor config={config} getFonts={getFonts} uploadImage={uploadImage}>

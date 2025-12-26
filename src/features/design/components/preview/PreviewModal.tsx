@@ -1,5 +1,5 @@
 import XIcon from '@duyank/icons/regular/X';
-import { Preview } from '@lidojs/design-editor';
+import { Preview } from 'src/local-lido/design-editor';
 import type { FC } from 'react';
 
 interface PreviewModalProps {

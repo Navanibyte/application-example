@@ -10,7 +10,7 @@ import TableIcon from '@duyank/icons/regular/Table';
 import TextTIcon from '@duyank/icons/regular/TextT';
 import UploadIcon from '@duyank/icons/regular/Upload';
 import VideoIcon from '@duyank/icons/regular/Video';
-import { useEditor } from '@lidojs/design-editor';
+import { useEditor } from 'src/local-lido/design-editor';
 import { useCallback, useState } from 'react';
 import { SidebarTab } from '../tabs';
 import { DrawContent } from './DrawContent';

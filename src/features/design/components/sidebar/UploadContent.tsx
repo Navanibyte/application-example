@@ -1,5 +1,5 @@
 import XIcon from '@duyank/icons/regular/X';
-import { useEditor } from '@lidojs/design-editor';
+import { useEditor } from 'src/local-lido/design-editor';
 import { fetchSvgContent } from '@lidojs/design-utils';
 import { type ChangeEvent, type FC, useRef, useState } from 'react';
 import { isMobile } from 'react-device-detect';
